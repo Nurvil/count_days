@@ -9,11 +9,6 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-type Human struct {
-	Name string
-	age  uint8
-}
-
 func main() {
 
 	fmt.Println(" Server running")
