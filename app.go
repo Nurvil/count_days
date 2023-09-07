@@ -9,7 +9,13 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
+type Human struct {
+	Name string
+	age  uint8
+}
+
 func main() {
+
 	fmt.Println(" Server running")
 
 	s := echo.New()
@@ -21,6 +27,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 }
 func Handler(ctx echo.Context) error {
 	d := time.Date(2025, time.January, 1, 0, 0, 0, 0, time.UTC)
